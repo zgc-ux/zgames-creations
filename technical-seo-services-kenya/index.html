@@ -165,6 +165,21 @@ Your website should perform like a well-optimized game engine — smooth, fast, 
 <p>
 At Z Games Creations, we build the technical foundation that allows your brand, business, and content to dominate search results.
 </p>
+  <script>
+				function tutor_prevent_copy(event) {
+					const nodeName = event.target?.nodeName
+					if (! ['INPUT', 'TEXTAREA'].includes(nodeName) ) {
+						event.preventDefault();
+					}
+				}
+
+				document.addEventListener('contextmenu', tutor_prevent_copy );
+				document.addEventListener('copy', tutor_prevent_copy );
+			</script>
+			<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/astra/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
  <section id="register">
   <h2>Contact Z Games Creations</h2>
   <div class="card">
