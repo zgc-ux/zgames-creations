@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Z Games website Development and SEO Game Services</title>
-  <meta name="description" content="We are Z Games Creation a specialist SEO agency in kenya offers professional in game website creation and SEO game services to grow downloads and visibility." />
-  <meta name="keywords" content="SEO for games, game marketing, ASO, gaming website" />
-  <meta name="author" content="ZGAMES" />
+  <title>Z Creation and SEO Services</title>
+  <meta name="description" content="We are Z Creation a specialist SEO agency in kenya helping brands,business and game studios grow with high-quality website develoment,SEO services and players & customers growth strategies." />
+  <meta name="keywords" content="SEO for technical, On-page, content, local,audits" />
+  <meta name="author" content="ZCREATION" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
@@ -28,16 +28,70 @@
     .logo { width: 80px; height: 80px; border: 2px solid #facc15; border-radius: 50%; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; font-weight: 800; }
     .whatsapp { position: fixed; right: 20px; bottom: 20px; background: #facc15; color: #000000; padding: 15px 18px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 10px 20px rgba(250,204,21,.4); transition: transform .3s; }
     .whatsapp:hover { transform: scale(1.1); }
-  </style>
+  <header class="site-header">
+  <h1></h1>
+
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</header>
+
+<div id="sideMenu" class="side-menu">
+  <a href="/">Home</a>
+  <a href="#">About Us</a>
+  <a href="#">SEO Services</a>
+  <a href="https://courses-zangu.web.app">Pricing</a>
+  <a href="https://zangubeapro.web.app">Case Studies</a>
+  <a href="https://wa.me/254765875543">Blog Articles</a>
+  <a href="https://wa.me/254765875543">Contact Us</a>
+</div>
+<style>
+.menu-icon{
+  position: absolute;
+  top: 22px;     /* move up/down */
+  right: 40px;   /* move left/right */
+
+  font-size: 36px;
+  color: #FFD000;
+  cursor: pointer;
+}
+
+
+/* SIDE MENU */
+.side-menu{
+  position:fixed;
+  top:80px;
+  right:-260px;
+  width:260px;
+  height:100%;
+  background:#111;
+  display:flex;
+  flex-direction:column;
+  padding-top:20px;
+  transition:0.3s;
+  z-index:9998;
+}
+
+.side-menu a{
+  color:#FFD000;
+  text-decoration:none;
+  padding:15px 25px;
+  font-size:20px;
+  border-bottom:1px solid #222;
+}
+
+.side-menu a:hover{
+  background:#FFD000;
+  color:#000;
+}
+</style>
 </head>
 <body>
   
 <header>
    
   <nav>
-    <h1><a href="#about">ZCREATION</a></h1>
+    <h1><a href="#about">ZCREATION.</a></h1>
+    <a href="#about">About us</a>
     <a href="#seo">SEO Services</a>
-    <a href="#goal">Goals</a>
   </nav>
 </header>
 <section id="about">
@@ -282,9 +336,20 @@
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
+<script>
+function toggleMenu(){
+  var menu = document.getElementById("sideMenu");
+  if(menu.style.right === "0px"){
+    menu.style.right = "-260px";
+  } else {
+    menu.style.right = "0px";
+  }
+}
+</script>
 </script>
 </body>
 </html>
+
 
 
 
